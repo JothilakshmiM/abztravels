@@ -1,0 +1,176 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0,183,255,0.8), rgba(0,212,255,0.8));
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #d0f4f7;
+}
+
+/* Highlight */
+.highlight {
+  color: #00e5ff;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background: url('https://sb.ecobnb.net/app/uploads/sites/3/2020/03/oscar-wilde-870x490.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  position: relative;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.hero-text h1 span {
+  display: inline-block;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-btn {
+  padding: 0.8rem 2rem;
+  background-color: #00e5ff;
+  color: #004d40;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #00bcd4;
+}
+
+/* Image Cards Section */
+.image-cards {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f0fbfc;
+}
+
+.image-card {
+  position: relative;
+  flex: 1 1 250px;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.image-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.image-card:hover img {
+  transform: scale(1.05);
+}
+
+.card-label {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: rgba(0,229,255,0.8);
+  color: #004d40;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.card-description {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f8ffff;
+  text-align: center;
+  line-height: 1.5;
+}
+.card-label-top {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #004d40;
+  background-color: rgba(0, 229, 255, 0.2);
+  padding: 0.5rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
